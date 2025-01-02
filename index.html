@@ -1,0 +1,157 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=area-stack&lang=js&code=PYBwLglsB2AEC8sDeBYAULWkwBsCmAXMuppmHgB5hEDkAymAIYDGA1ngCawCCATno1gBhABaNeYGiVgBfADTSwwYDkggiqDKTC8IAcz15etRhQgBnGgq2ZTFgArAI0cseI3tATxCFYNZrzA5pbWpKQ4jABGeDga0mGYkSyseoEArtAcQirAbjQAxABsjADsAJwAHACsUh6YMvGy0vLS-IaZcR4cjExEANo03ABmusyMVn7c5hDjcn4AommBPhM0AHK5YCJGcNwAtkYQY6sA8swC0DOrdMBpWzwHo-MAus2hWMo4kcAUnWFDAjAS18mgSsHMjAAbngpgBJPaMQwaBoeFH1d6pCAcP7hPBDah-ADMAFIrI1dHoRASaAAWUnvRLAMBKPa0ElkjzMGBMZwAGSiMSIOjSeDe0go3DM5n6jVBCTA3l8_h6eD0uU8HLB3wy3V4ngA4ox1LAhowcOY8AzSN1erA-gBGMqFe1zR2FABMrqdhK9hRpvqqvsKvpKvoqvrKXpKAAYoy7YI6Sp6E2USj6UyV_RnAxngxnQxnwxnIymKrHS_HHRVk1X01Ws1Wc1W81WC1Wi1WS46yuXu5WymUawO6wOGwOmwOWwO2wOOwOS-7o0u5ovo_HV8nV-nV1nVznV3nVwXV0XVwu1-XF_b12vN2vt2vd2v92vD2vj2vT2vz4uV9H3Te7ruq8qLSM87yeJKFgyh4cphAqPi0JCZoirUYRorA4HSBauh4NKdqyo0mDQIwBy0MMTyavKiq0Dgzh4FRYTmEwbC0AAKkyZqMaQ4gCAwnj4MiVqYHgewgGI0z4XBCRDMAzBpPhNA4RAeFoQkLR1LANqMP09oAHRVFU3YDq6elltGHZ6WU151mZhLRlU86mZmhSWSU9olOUJkJmZhRVC2VlLvOXZWVUMZOT5g4AaZFQVISTZmamhIRfpFQ0tZMVlISbaJYU0YpWZQENnpJRlsl3mpfa0a2aVhLugV1YZT5pUJRU9qEpWZltTWZmZj1WVlMVZT-Suelrva_XtfV3numNE27npVU0uuY1taeY2Dfui3WZuY1VO6h6LfZhQRbN7pVNWo2LoSh35Wmo11e65ULnpHXuseemLoUJ2VKN9ppeV60dfZp2ved3brQdJSHYSNKZrOD3DV5L0XdFsCzR6g6g_ZsWjTS7rVHjQG7dNz0Pe5ZPo69eUfTSfnTUDzrbq9mZAxUg544ShLszNLNY7zy3vbOIHoVa0nEaRSpTFcwlYDRfh0dADGy8xyTsZxODcbY_CMPxgnIBpYKieJjCSTiYKyfJinKapRGyLL2m6WZF2taVPMvQ5XN_dGhQfdVu0WWuf1pitT2XVTB0E4jPYI1T3PXg9sPpb9VNw9znMjVTVTZYdNJtcFo3Oudo1pvjhdJaD5T2odFReXMhJjTScP159HkFg39nxbHHceSWPeGS3sMDSnDc0hZ7cGcleYNzTyYz-1096b7y0tz9LeZjd3clfFi_VE9LexWFLc9tGWYN8NYVb8N7pZjSY0WY5I9WYut9zSWd_5UHsB3x5NI5j_g5_6vSXEAm6ec5h3zHhNCBekm7Ri8gWO-hkObfyXv5eMd8_QwN9u1GBMZSp4PakAzysMYHVAstOMh1kgEVEKOnVBWUqjJ0QYFcKqYRakENqQcWsASJkQWEsUAys7YISVIrYRmlVasT8BxJgmtZa8V1gqfWSAuFhGNhJaC7gwSYEtgpWgNtLB2zUdaHoOk7Q_2TD_Py6Zz5lhzA3AGDjYFh3Xh1LyRZz6DjPiVKq6YP7VwnpUG6x9BqAwPreWO1inSUNQVVbyd8Oo0lsYlEJsAG4lAuhPWh8ComfTLBgz6WUizWLoTA-0RlX6Ln3qgxcCTgGOhgdnEGqYYHvUKbDfxq0E61MqN2FhAFPJNKYSwuq1U8lplya0hhf8ixVEWkuAs8zzq-zmPMqo941mwLTDmZZcNdmT2RnmeZ0NhpbLykBLZWVVmwHmWWOmWzMmVEnFcxyP1jlmXakWQo1NTlOjmD8_8JZAVNx-gWH5ede7_NgD8xchMYXbTigC7Z8DkVdzzBCv-84MWwJOlmCFfpH44u5v-ZFT0AKxJOaCjh6JCKaT4UqDYEhti8F2I8I4swRHyxoOIrW4IWKsHVnIvlii9YghMSJMSmipJ210XJfRfhDFqVFnbR2dpHFAR-iUxapVmEwKbulJpPY8x31OV0tKy1KWrQ2bEu-0K75xW8vMjyZTbn5PDss3278SrWUKamH6KdnUPytZq7Vg1k7TPmf-I-bqKngJmXlWO8yoF6rdULeMzrs79K2YZGpgKYzhIRVzZ6OKgLuWRf9L-mLvoVtTMnb5LiOrIvxoNCt0N0w_Ncja6FPz7I-1iT86o_NwVL3ysC16adkVhX2rEkoY1koFjnQTft0y53ZWmqu7ZF1Z12SjrAOd-M_5zDnSHdMFQNoeWPUvEOV7Bq4P3YcnMc7Bz5TmOem6Rk31Lyet2L96V_rji_eu5M57rxo3PctZusBz0enve-zJPMv1MK_jB5a8Zz3vWQcNGl9s6VggZbQM4FwZZcsQgreifKpGCpkRrEVOsxVCTtho02WieFyqtgYw4ttNISq0mY_od9zppIdXncqJql73LwX6OZOqu6Rp9cXBFp9h3Ip9o5NFbUx1LM-nDMFZLMkfK5op_NB0c37SsSVPOenY2wa2fFbtLC-kfNrjGu146u1eWJXnEdcaZP_nesimmj9tP-q2QTZKgWPRFjnRdKZeZz0WTSQlr5X76rOivTfOqV7yheumRBumOKqoEOg3NVyX7BzxS_bQtKt672xzKHtODb9po5nPch6a2X7OqcMjmBrsMB4IvKE29JS86EfOskl0K6YGsVKyyV1y0DYANadF_Kqr1YoFga6mmbVVH69dgQ5eMDXqvzhzD8pME0XmDfSlpqr7U2zRlgRswoOGTE8II34G4dwRAPEOMcWWojaIUZVgKoVXEFH0eUeK2WzGzbaJ0Xo62XGjE8Ydvxu0qUb4BXMjlVy1VTLfUNc1OhyMCdAU6tDVb16an6VgwlTJaNadwwjc5PyOU3atRvjFbmNUx45TitnZyS5LJtUtRVQKe79KlUzKNaq5RTLX0OkQl6HVP0RyBcHALcdwqjUMj02ayS5sYw24XV9VNPJ-VGifOee1FMN3qnbp7XORsAVoavOhDNV6OhSXFKZniurwyfrXG5H9pPHy-vqia1nEnuVfu5NGprdX6o90m-dpm3VLg9Fs-BN9U8_u03lZJVrsqLfmX6Mrbrqx5ytSdb6V35nDQchWipJYG_5UJK9sC6AZAAG4gA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.6.0/files/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.6.0/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-graph-modularity/2/files/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.6.0/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+    text: 'Stacked Area Chart'
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'cross',
+      label: {
+        backgroundColor: '#6a7985'
+      }
+    }
+  },
+  legend: {
+    data: ['Africa', 'Asia', 'Europe', 'Northern America', 'Oceania', 'South America']
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: [
+    {
+      type: 'category',
+      boundaryGap: false,
+      data: [1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value'
+    }
+  ],
+  series: [
+    {
+      name: 'Africa',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [1.5519999, 1.8008, 1.9113, 1.8305999, 1.7468, 1.7177999, 1.8656, 1.9009999, 1.9570999, 1.9221, 1.8835, 1.8973999, 1.8491, 1.8937, 1.8960999, 1.8224, 1.7803999, 1.8103, 1.7832999, 1.8291, 1.785, 1.8131, 1.8812, 1.8742, 1.9394, 1.956, 2.0112, 1.9132999, 2.0124, 2.1041, 2.0818, 2.0945, 2.1912, 2.0526, 2.1306999, 2.2582, 2.2036, 2.0973, 2.3223999, 2.3127, 2.2066998, 2.1843998, 2.3130999, 2.3251998, 2.2676, 2.3474998, 2.3957999, 2.5821, 2.6292999, 2.3088, 2.4285, 2.4222, 2.2993999, 2.3713999, 2.3607, 2.4652998, 2.3613, 2.3748, 2.3892, 2.4338999, 2.3792999, 2.4127998]
+    },
+    {
+      name: 'Asia',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [1.8585, 1.8788999, 2.0533, 2.1067, 2.032, 2.0801, 2.1731, 2.2382, 2.2628, 2.3990998, 2.3811, 2.3344998, 2.4738, 2.4356, 2.5376, 2.4819999, 2.6125, 2.7342, 2.6973999, 2.7916, 2.8799, 3.0447, 3.2177, 3.3035998, 3.3179, 3.3155, 3.3493998, 3.4087, 3.5396, 3.6072, 3.6136, 3.6741, 3.699, 3.7436998, 3.7356, 3.8523, 3.8857, 3.9004, 3.9557998, 3.9524, 4.0085998, 3.9204, 4.019, 4.0901, 4.1745, 4.1925, 4.3005, 4.3648, 4.4012, 4.4407997, 4.5592, 4.6561, 4.64, 4.6713, 4.7078, 4.7135, 4.7734, 4.8508997, 4.8915, 4.8638, 4.9354997, 4.9070997]
+    },
+    {
+      name: 'Europe',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [4.12, 4.1653, 3.9805, 3.8435, 3.4238, 3.7317998, 3.9924, 3.7103, 4.0167, 3.9836, 3.9943998, 3.8012998, 4.1696997, 4.1099, 4.3143, 3.8936, 3.7587, 3.8607998, 4.2801, 4.2938, 4.1663, 4.1514, 4.2023, 4.2099, 4.3019, 4.5330997, 4.271, 4.343, 4.0811, 4.2981997, 4.2177, 4.5547, 4.3203998, 4.7307997, 4.9458, 5.1007, 5.2567, 5.5013, 5.4735, 5.2475, 5.5379996, 5.7695, 5.6022, 5.9367, 5.8046, 5.7598996, 5.9596996, 5.8138, 6.3676996, 6.029, 6.0446997, 6.4817996, 6.2085, 6.1983, 6.4707, 6.3596, 6.4459996, 6.4694, 6.4645996, 6.3802, 6.2321997, 5.7446]
+    },
+    {
+      name: 'Northern America',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [3.8226998, 4.1784997, 4.4449, 4.5906, 4.7693, 4.8441997, 5.0850997, 4.96, 4.8399, 5.1763, 5.2882, 5.2679, 4.7911, 4.9769998, 5.1085997, 5.2268, 4.9449997, 5.0257, 5.1548, 4.9460998, 5.4014997, 5.2791, 5.1531997, 5.5523, 6.0703998, 6.3339996, 6.2271, 6.1801, 6.4466, 6.1974998, 6.4231, 6.4294, 6.1763, 6.6850996, 6.3006997, 6.8592997, 6.6099, 6.3473, 6.5752997, 7.0397, 7.2806997, 7.3729997, 7.4758997, 7.8328, 7.4245, 7.7313, 8.0917, 7.6731, 7.9413, 7.5375, 7.9209, 8.3651, 8.623199, 8.4918995, 8.3722, 8.1121, 8.4147, 8.6213, 8.375899, 8.5401, 8.6411, 8.2755995]
+    },
+    {
+      name: 'Oceania',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [4.2536, 4.8483996, 4.6804, 4.7648, 5.1735997, 5.7925, 6.0492997, 6.0659, 6.3810997, 5.2476997, 6.2756, 5.3325, 6.0726, 5.5522, 4.7486997, 5.1621, 5.3550997, 4.9816, 5.8757, 4.99, 6.6857996, 6.3487, 6.1548, 5.0227, 6.6075997, 5.976, 5.2839, 6.6628, 7.5807996, 8.0836, 8.0138, 8.2961, 7.2432, 7.7967997, 8.4466, 6.1078, 8.0168, 8.9235, 8.8684, 7.9941998, 9.0513, 8.0192995, 8.540299, 7.7355, 6.0555, 9.3455, 6.7931, 3.6636, 5.9136, 8.953, 9.1532, 8.6812, 9.9601, 10.3887, 9.4997, 9.1105995, 9.4051, 9.8689995, 6.7212996, 6.7490997, 8.8137, 10.4506]
+    },
+    {
+      name: 'South America',
+      type: 'line',
+      stack: 'Total',
+      areaStyle: {},
+      emphasis: {
+        focus: 'series'
+      },
+      data: [1.8246, 1.8007, 1.6803, 1.6649, 1.7637999, 1.6221, 1.7601, 1.6723, 1.6215, 1.7521, 1.6474999, 1.7657, 1.7885, 1.824, 1.8383, 1.7407, 1.8353, 1.7008, 1.8141999, 1.9028, 1.7874, 2.0379, 1.9526, 2.1359, 2.3151, 2.2029, 2.1727, 2.3709, 2.5511, 2.4332, 2.6887, 2.609, 2.7765, 2.9002, 3.0525, 3.2925, 3.4524, 3.2186, 3.6632998, 3.6193, 3.8307998, 3.8874998, 3.8767, 4.0648, 3.9206, 4.4126997, 4.3714, 4.7121, 4.7784, 4.4632998, 5.0326, 5.0062, 5.0724998, 5.2317, 5.6043997, 5.3712, 5.6468, 5.8248997, 5.6966996, 5.9505, 6.1159, 5.9093]
+    }
+  ]
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
